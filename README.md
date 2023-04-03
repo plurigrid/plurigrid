@@ -1,11 +1,15 @@
 # Plurigrid: Protocol for Autopoietic Ergodicity in Decentralized Transactive Energy
 keywords: sense-making, active inference doctrines, amplifying agency in networks, open games, joint states, generative models, correlated equilibria, polynomial morphology, anarchist anthropologyo, categorical cybernetics, temporal type theory
+Check out our:
+- [ontology](https://github.com/plurigrid/plurigrid)
+- [microworlds](https://github.com/plurigrid/microworlds)
+- [agent](https://github.com/plurigrid/agent)
 
 The advancement of self-rebalancing electricity grid with renewables requires a balance between theoretical insights and practical considerations. In this paper, we propose a thermodynamic perspective on autopoietic ergodicity, emphasizing the principles of energy sovereignty and the role of theoretical computer science in identifying potential limitations and gaps in algorithmic construction and aggregation of social choice. By adhering to the principles of embodied gradualism, we aim to foster a more agentic view of the development of smart grids and our participation in them.
 
 The development of an energy coordination commons must consider thermodynamics and energy efficiency. We explore strategies to optimize energy consumption, including novel algorithmic approaches and hardware advancements that minimize the environmental impact and ensure long-term sustainability.
 
-Autopoietic Ergodicity: A Foundation for Embodied Gradualism
+## Autopoietic Ergodicity: A Foundation for Embodied Gradualism
 We delve into the concept of autopoietic ergodicity, which combines the principles of autopoiesis (self-maintenance) and ergodicity (time and ensemble average equivalence) in interoperable systems. This foundation allows for the gradual, adaptive development of Plurigrid of Plurigrids while maintaining the principles of embodied intelligence.
 
 ## Background detour
@@ -40,7 +44,6 @@ One challenge in applying partial orderings to Plurigrid systems at multiple sca
 
 By incorporating partial orderings into Plurigrid decentralized expansion planning and mathematical unit commitment coordination, we can better align Plurigrid systems with human values, while acknowledging the complexity and dynamism of human preferences. This approach allows for more robust and adaptable Plurigrid that can navigate the challenges of value alignment in a diverse and evolving world.
 
-A Principled Approach to Overcoming Challenges in Plurigrid's Decentralized Energy Protocol
 To overcome the aforementioned challenges, we suggest a principled approach that incorporates the combined anarchist categorical cybernetics principles _and_ privacy / interoperability in practice, to guide Plurigrid's development and growth. The following steps outline a strategic plan that can help Plurigrid succeed despite the numerous obstacles, challenges, and hurdles.
 
 **Leveraging Plurigrid Protocol for optimization and coordination.** Utilize representational learning systems to develop and implement sophisticated optimization and coordination strategies that maximize the efficiency, stability, and scalability of Plurigrid's decentralized energy protocol. This may include the application of reinforcement learning, compositional game theory, compositional active inference and other advanced techniques to improve decision-making and resource allocation.
@@ -51,11 +54,12 @@ To overcome the aforementioned challenges, we suggest a principled approach that
 
 **Iterative and adaptive development.** Adopt an iterative and adaptive development process that enables Plurigrid to learn from real-world interactions and continuously refine its decentralized energy protocol. This approach, rooted in embodied gradualism and autopoietic ergodicity, allows the system to adapt to changing conditions and user preferences, ensuring its long-term viability and resilience.
 
-**Embracing the Open Agencies Framework and Cyborgism Manifest** Align Plurigrid's development and growth with the principles of the Open Agencies Framework and Cyborgism Manifesto. By positioning coalitions of e-gens in Plurigrids as partners in the development of decentralized energy solutions, Plurigrid can foster a more equitable and diverse energy future that benefits all stakeholders.
+**Embracing the Open Agencies Framework and Cyborgism Manifesto.** Align Plurigrid's development and growth with the principles of the Open Agencies Framework and Cyborgism Manifesto. By positioning coalitions of e-gens in Plurigrids as partners in the development of decentralized energy solutions, Plurigrid can foster a more equitable and diverse energy future that benefits all stakeholders.
 
 **Ethical and responsible uses of AI** Ensure that any systems used in Plurigrid's development adhere to ethical principles and responsible AI guidelines, e.g. [Constitutional AI](https://arxiv.org/abs/2212.08073). This includes transparency, fairness, accountability, and privacy protection, which are critical in fostering trust and acceptance among users and communities.
 
 By adopting these principles and strategies, Plurigrid can overcome the numerous challenges it faces and succeed in its mission to transform the energy sector. Through its innovative, decentralized approach, Plurigrid stands to succeed.
 
 # Credit
-Derived from a pared-down version of the original [Task-Driven Autonomous Agent](https://twitter.com/yoheinakajima/status/1640934493489070080?s=20) (2023-03-28) shared on Twitter.
+- [Task-Driven Autonomous Agent](https://twitter.com/yoheinakajima/status/1640934493489070080?s=20) shared on Twitter (2023-03-28)
+- [Compositional Active Inference](https://youtu.be/CoVKGFH6wRQ) given at Topos Institute (2022)
