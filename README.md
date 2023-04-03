@@ -12,7 +12,7 @@ The development of an energy coordination commons must consider thermodynamics a
 ## Autopoietic Ergodicity: A Foundation for Embodied Gradualism
 We delve into the concept of autopoietic ergodicity, which combines the principles of autopoiesis (self-maintenance) and ergodicity (time and ensemble average equivalence) in interoperable systems. This foundation allows for the gradual, adaptive development of Plurigrid of Plurigrids while maintaining the principles of embodied intelligence.
 
-## Background detour
+## Background detour 🐇🕳️
 Markov Categories provide a compositional framework for studying probability theory and are particularly well-suited for modeling systems where probability distributions and stochastic processes play a key role. In this work, we extend the open games framework for compositional game theory to encompass both pure and mixed strategies, leveraging the expressive power of Markov Categories and their rich structure.
 
 Central to our approach is the development of generative models for games, which are represented as morphisms in a Markov Category. These models encapsulate the joint distribution of states and strategies for a game and allow us to reason about the dependencies between player strategies, game states, and outcomes.
@@ -48,7 +48,7 @@ To overcome the aforementioned challenges, we suggest a principled approach that
 
 **Leveraging Plurigrid Protocol for optimization and coordination.** Utilize representational learning systems to develop and implement sophisticated optimization and coordination strategies that maximize the efficiency, stability, and scalability of Plurigrid's decentralized energy protocol. This may include the application of reinforcement learning, compositional game theory, compositional active inference and other advanced techniques to improve decision-making and resource allocation.
 
-**Collaboration with stakeholders.:** Foster partnerships with key stakeholders in the energy sector, including regulators, utilities, technology providers, and consumers. Open and transparent collaboration will be crucial to drive necessary policy changes, encourage investment, and promote widespread adoption of decentralized energy solutions.
+**Collaboration with stakeholders.** Foster partnerships with key stakeholders in the energy sector, including regulators, utilities, technology providers, and consumers. Open and transparent collaboration will be crucial to drive necessary policy changes, encourage investment, and promote widespread adoption of decentralized energy solutions.
 
 **Education and awareness campaigns.** Develop and implement targeted education and awareness campaigns to help consumers and communities understand the benefits of decentralized energy systems. By highlighting the potential for increased efficiency, sustainability, and empowerment, Plurigrid can build trust and support for its innovative approach.
 
@@ -56,7 +56,7 @@ To overcome the aforementioned challenges, we suggest a principled approach that
 
 **Embracing the Open Agencies Framework and Cyborgism Manifesto.** Align Plurigrid's development and growth with the principles of the Open Agencies Framework and Cyborgism Manifesto. By positioning coalitions of e-gens in Plurigrids as partners in the development of decentralized energy solutions, Plurigrid can foster a more equitable and diverse energy future that benefits all stakeholders.
 
-**Ethical and responsible uses of AI** Ensure that any systems used in Plurigrid's development adhere to ethical principles and responsible AI guidelines, e.g. [Constitutional AI](https://arxiv.org/abs/2212.08073). This includes transparency, fairness, accountability, and privacy protection, which are critical in fostering trust and acceptance among users and communities.
+**Ethical and responsible uses of AI.** Ensure that any systems used in Plurigrid's development adhere to ethical principles and responsible AI guidelines, e.g. [Constitutional AI](https://arxiv.org/abs/2212.08073). This includes transparency, fairness, accountability, and privacy protection, which are critical in fostering trust and acceptance among users and communities.
 
 By adopting these principles and strategies, Plurigrid can overcome the numerous challenges it faces and succeed in its mission to transform the energy sector. Through its innovative, decentralized approach, Plurigrid stands to succeed.
 
