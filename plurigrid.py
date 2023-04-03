@@ -7,11 +7,11 @@ from typing import Dict, List
 #Set API Keys
 OPENAI_API_KEY = ""
 PINECONE_API_KEY = ""
-PINECONE_ENVIRONMENT = "us-east1-gcp" #Pinecone Environment (eg. "us-east1-gcp")
+PINECONE_ENVIRONMENT = "us-east4-gcp" #Pinecone Environment (eg. "us-east1-gcp")
 
 #Set Variables
-YOUR_TABLE_NAME = "test_table"
-OBJECTIVE = "Solve world hunger."
+YOUR_TABLE_NAME = "plurigrid"
+OBJECTIVE = "Self-rebalance and sustainably develop the electricity grid to Kardashev Type II and beyond."
 YOUR_FIRST_TASK = "Develop a task list."
 
 #Print OBJECTIVE
@@ -23,7 +23,7 @@ openai.api_key = OPENAI_API_KEY
 pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENVIRONMENT)
 
 # Create Pinecone index
-table_name = YOUR_TABLE_NAME
+table_name = "plurigrid"
 dimension = 1536
 metric = "cosine"
 pod_type = "p1"
@@ -90,7 +90,7 @@ def context_agent(query: str, index: str, n: int):
     include_metadata=True)
     #print("***** RESULTS *****")
     #print(results)
-    sorted_results = sorted(results.matches, key=lambda x: x.score, reverse=True)    
+    sorted_results = sorted(results.matches, key=lambda x: x.score, reverse=True)
     return [(str(item.metadata['task'])) for item in sorted_results]
 
 # Add the first task
