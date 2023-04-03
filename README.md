@@ -2,7 +2,7 @@
 keywords: sense-making, active inference doctrines, amplifying agency in networks, open games, joint states, generative models, correlated equilibria, polynomial morphology, anarchist anthropologyo, categorical cybernetics, temporal type theory
 Check out our:
 - [ontology](https://github.com/plurigrid/plurigrid)
-- [microworlds](https://github.com/plurigrid/microworlds)
+- [microworlds](https://github.com/plurigrid/microworlds) (topoi, arena)
 - [agent](https://github.com/plurigrid/agent)
 
 The advancement of self-rebalancing electricity grid with renewables requires a balance between theoretical insights and practical considerations. In this paper, we propose a thermodynamic perspective on autopoietic ergodicity, emphasizing the principles of energy sovereignty and the role of theoretical computer science in identifying potential limitations and gaps in algorithmic construction and aggregation of social choice. By adhering to the principles of embodied gradualism, we aim to foster a more agentic view of the development of smart grids and our participation in them.
@@ -63,3 +63,4 @@ By adopting these principles and strategies, Plurigrid can overcome the numerous
 # Credit
 - [Task-Driven Autonomous Agent](https://twitter.com/yoheinakajima/status/1640934493489070080?s=20) shared on Twitter (2023-03-28)
 - [Compositional Active Inference](https://youtu.be/CoVKGFH6wRQ) given at Topos Institute (2022)
+- [Compositional Game Theory with Mixed Strategies: Probabilistic Open Games Using a Distributive Law](https://arxiv.org/abs/2009.06831)
