@@ -12,5 +12,11 @@ pkgs.mkShell {
     poetry
     tree
     sl
+    jq
+    stdenv.cc.cc.lib
   ];
+  shellHook = ''
+    LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [ pkgs.stdenv.cc.cc.lib ]};
+    echo "gm gm"
+  '';
 }
