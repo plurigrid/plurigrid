@@ -4,13 +4,14 @@ import json
 import os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
 
 def login():
-    # Get login credentials from environment variables; prompt user for input if not set
-    if os.getenv('CHATORG_USERNAME'):
-        username = os.getenv('CHATORG_USERNAME')
+    # Get login credentials from environment variables 
+    if os.getenv('CHATORG_EMAIL'):
+        email = os.getenv('CHATORG_EMAIL')
     else:
-        username = input('Enter your Chatorg username: ')
+        email = input('Enter your Chatorg email: ')
 
     if os.getenv('CHATORG_PASSWORD'):
         password = os.getenv('CHATORG_PASSWORD')
@@ -24,47 +25,47 @@ def login():
     driver.get(login_url)
 
     # Find the username and password input elements
-    username_input = driver.find_element_by_name('username')
-    password_input = driver.find_element_by_name('password')
+    email_input = driver.find_element(By.NAME, "email")
+    password_input = driver.find_element(By.NAME, "password")
 
     # Enter your login credentials
-    username_input.send_keys(username)
-    password_input.send_keys(password)
+    email_input.send_keys("this-is-a-test-username")
+    password_input.send_keys("testpassword")
 
     # Submit the login form
     password_input.send_keys(Keys.RETURN)
 
     # Wait for the login to complete
-    time.sleep(5)
+    time.sleep(10)
 
     return driver
 
 
-def scrape_chat(url):
-    response = requests.get(url)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.text, 'html.parser')
+# def scrape_chat(url):
+#     response = requests.get(url)
+#     if response.status_code == 200:
+#         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # Find relevant content from the HTML using Beautiful Soup
-        # Replace 'YOUR_SELECTOR' with the appropriate CSS selector for the desired content
-        content = soup.select('body')
+#         # Find relevant content from the HTML using Beautiful Soup
+#         # Replace 'YOUR_SELECTOR' with the appropriate CSS selector for the desired content
+#         content = soup.select('body')
 
-        # Extract relevant information from the content
-        # Customize this according to your specific needs
-        data = []
-        for item in content:
-            data.append({
-                'property': item.get_text().strip(),
-                # Add other properties as needed
-            })
+#         # Extract relevant information from the content
+#         # Customize this according to your specific needs
+#         data = []
+#         for item in content:
+#             data.append({
+#                 'property': item.get_text().strip(),
+#                 # Add other properties as needed
+#             })
 
-        # Save the extracted data as a JSON file
-        with open('chatorg.json', 'w') as outfile:
-            json.dump(data, outfile, indent=2)
-    else:
-        print(f'Failed to retrieve content from {url}. Status code: {response.status_code}')
+#         # Save the extracted data as a JSON file
+#         with open('chatorg.json', 'w') as outfile:
+#             json.dump(data, outfile, indent=2)
+#     else:
+#         print(f'Failed to retrieve content from {url}. Status code: {response.status_code}')
 
 if __name__ == '__main__':
-    url = 'https://app.chatorg.ai'
+    # url = 'https://app.chatorg.ai'
     login()
-    scrape_chat(url)
+    # scrape_chat(url)
