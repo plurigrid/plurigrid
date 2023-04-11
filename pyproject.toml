@@ -16,6 +16,8 @@ chromadb = "^0.3.21"
 pandas = "^2.0.0"
 langchain = "^0.0.135"
 wandb = "^0.14.2"
+bs4 = "^0.0.1"
+selenium = "^4.8.3"
 
 
 [build-system]
