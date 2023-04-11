@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import os
+import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -28,11 +29,14 @@ def login():
     email_input = driver.find_element(By.NAME, "email")
     password_input = driver.find_element(By.NAME, "password")
 
-    # Enter your login credentials
-    email_input.send_keys("this-is-a-test-username")
-    password_input.send_keys("testpassword")
+    print(email)
+    print(password)
 
-    # Submit the login form
+    # Enter your login credentials
+    email_input.send_keys(email)
+    password_input.send_keys(password)
+
+    # # Submit the login form
     password_input.send_keys(Keys.RETURN)
 
     # Wait for the login to complete
