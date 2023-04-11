@@ -6,8 +6,16 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 def login():
-    username = os.getenv('CHATORG_USERNAME')
-    password = os.getenv('CHATORG_PASSWORD')
+    # Get login credentials from environment variables; prompt user for input if not set
+    if os.getenv('CHATORG_USERNAME'):
+        username = os.getenv('CHATORG_USERNAME')
+    else:
+        username = input('Enter your Chatorg username: ')
+
+    if os.getenv('CHATORG_PASSWORD'):
+        password = os.getenv('CHATORG_PASSWORD')
+    else:
+        password = input('Enter your Chatorg password: ')
 
     login_url = 'https://app.chatorg.ai/login'
     driver = webdriver.Chrome()
