@@ -2,8 +2,9 @@ from chatarena.agent import Player
 from chatarena.backends import OpenAIChat
 from chatarena.environments.conversation import Conversation
 from chatarena.arena import Arena
+import time
 
-environment_description = "In an electricity market with distributed energy resources (DERs), the goal is to efficiently manage the energy supply while minimizing costs and maximizing profits. Develop a three-level gameplay-based intelligent structure that addresses network and physical constraints, evaluates individual and collaborative strategies, and encourages the formation of coalitions among the participants. Consider the use of optimization algorithms, fuzzy logic, and cooperative game theory for effective collaboration."
+environment_description = "In a decentralized electricity market with distributed energy resources (DERs), operate a game-theoretic framework that efficiently manages energy supply while minimizing costs and maximizing profits for all participants. The framework should address network and physical constraints, evaluate the effectiveness of individual and collaborative strategies, and encourage coalition formation among agents such as electric vehicle owners, solar panel owners, and battery owners. Incorporate optimization algorithms, fuzzy logic, or cooperative game theory to facilitate effective collaboration and decision-making within the grid."
 
 agent1 = Player(
     name="Electric Vehicle Owner",
@@ -32,5 +33,6 @@ arena = Arena(
 )
 
 # arena.launch_cli()
-arena.run(num_steps=10)
-arena.save_history(path="./plurigrid/ontology/arena_history.json")
+timestamp = time.time()
+arena.run(num_steps=30)
+arena.save_history(path=f"./plurigrid/ontology/arena_history_{timestamp}.json")
