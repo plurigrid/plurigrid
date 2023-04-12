@@ -14,9 +14,10 @@ pkgs.mkShell {
     sl
     jq
     stdenv.cc.cc.lib
+    libcxx
   ];
   shellHook = ''
-    LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [ pkgs.stdenv.cc.cc.lib ]};
+    export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [ pkgs.stdenv.cc.cc.lib ]};
     echo "gm gm"
   '';
 }
