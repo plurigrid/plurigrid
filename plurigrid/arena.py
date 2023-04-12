@@ -34,5 +34,5 @@ arena = Arena(
 
 # arena.launch_cli()
 timestamp = time.time()
-arena.run(num_steps=30)
+arena.run(num_steps=20)
 arena.save_history(path=f"./plurigrid/ontology/arena_history_{timestamp}.json")
