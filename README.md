@@ -3,6 +3,7 @@ Set up Docker and enable Rosetta in **Experimental Features**
 ```
 docker run -it --platform=linux/amd64 -v "$(pwd)":/plurigrid nixos/nix bash
 nix-shell
+cd /plurigrid
 poetry update
 poetry shell
 python plurigrid.py
