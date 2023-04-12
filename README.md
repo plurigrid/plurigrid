@@ -1,3 +1,13 @@
+# Getting started
+Set up Docker and enable Rosetta in **Experimental Features**
+```
+docker run -it --platform=linux/amd64 -v "$(pwd)":/plurigrid nixos/nix bash
+nix-shell
+poetry update
+poetry shell
+python plurigrid.py
+```
+
 # Plurigrid: Protocol for Autopoietic Ergodicity in Decentralized Transactive Energy
 keywords: sense-making, active inference doctrines, amplifying agency in networks, open games, joint states, generative models, correlated equilibria, polynomial morphology, anarchist anthropologyo, categorical cybernetics, temporal type theory
 Check out our:
