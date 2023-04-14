@@ -1,8 +1,8 @@
 import argparse
-from agent.agents.digital_twin import DigitalTwin
-from agent.agents.ontology_agent import OntologyAgent
-from agent.config import config
-from agent.agents.play_coplay_agent import PlayCoplayAgent
+from plurigrid.agent.agents.digital_twin import DigitalTwin
+from plurigrid.agent.agents.ontology_agent import OntologyAgent
+from plurigrid.agent.config import config
+from plurigrid.agent.agents.play_coplay_agent import PlayCoplayAgent
 
 
 def run():

@@ -1,8 +1,8 @@
-from agent.agents.prompt_templates.play_coplay_template import (
+from plurigrid.agent.agents.prompt_templates.play_coplay_template import (
     PLAY_COPLAY_PROMPT_PREFIX,
     PLAY_COPLAY_PROMPT_SUFFIX,
 )
-from agent.agents.base_agent import BaseAgent
+from plurigrid.agent.agents.base_agent import BaseAgent
 from langchain.agents.conversational_chat.base import (
     ConversationalChatAgent,
     AgentOutputParser,
@@ -12,7 +12,7 @@ from langchain.chains import LLMChain
 from langchain.agents import Tool
 from langchain.chains.conversation.memory import ConversationBufferMemory
 from langchain.chat_models import ChatOpenAI
-from agent.models.tasks_model import TasksModel
+from plurigrid.agent.models.tasks_model import TasksModel
 
 
 class PlayCoplayAgent(BaseAgent):

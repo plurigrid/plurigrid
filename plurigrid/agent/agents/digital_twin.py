@@ -1,8 +1,8 @@
 from langchain import LLMChain
-from agent.agents.base_agent import BaseAgent
+from plurigrid.agent.agents.base_agent import BaseAgent
 from langchain.agents import Tool
-from agent.config import config
-from agent.models.index_model import IndexModel
+from plurigrid.agent.config import config
+from plurigrid.agent.models.index_model import IndexModel
 from langchain.chat_models import ChatOpenAI
 from langchain.agents.conversational_chat.base import (
     ConversationalChatAgent,

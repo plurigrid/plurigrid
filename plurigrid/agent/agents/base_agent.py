@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
-from agent.utils import gradio, repl, zulip
-from agent.utils import discord
-
+from plurigrid.agent.utils import gradio, repl, zulip
+from plurigrid.agent.utils import discord
 
 class BaseAgent(ABC):
     def __init__(self, config, mode):

@@ -1,6 +1,6 @@
 from llama_index import DiscordReader, GPTSimpleVectorIndex, SimpleDirectoryReader
 from llama_index.readers.obsidian import ObsidianReader
-from agent.config import config
+from plurigrid.agent.config import config
 import gradio as gr
 import os
 
