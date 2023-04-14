@@ -2,7 +2,7 @@
 name = "plurigrid"
 version = "0.0.0"
 description = "fruitloop"
-authors = ["Barton Rhodes <barton@plurigrid.art>"]
+authors = ["Plurigrid <gm@plurigrid.xyz>"]
 license = "MIT License"
 readme = "README.md"
 
@@ -17,7 +17,19 @@ wandb = "^0.14.2"
 chatarena = "^0.1.7"
 pettingzoo = "^1.22.3"
 chess = "^1.9.4"
-
+pypdf2 = "^3.0.1"
+unstructured = "^0.4.11"
+transformers = "^4.26.1"
+gradio = "^3.19.1"
+duckdb = "^0.7.0"
+slugify = "^0.0.1"
+clang = "^14.0"
+argparse = "^1.4.0"
+discord = "^2.2.2"
+pygithub = "^1.58.1"
+torch = "^2.0.0"
+sentencepiece = "^0.1.97"
+zulip = "^0.8.2"
 
 [build-system]
 requires = ["poetry-core"]
