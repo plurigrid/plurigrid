@@ -3,10 +3,17 @@ import pinecone
 import time
 from collections import deque
 from typing import Dict, List
+import os
 
 #Set API Keys
-OPENAI_API_KEY = ""
-PINECONE_API_KEY = ""
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
+
+if not OPENAI_API_KEY:
+    raise ValueError("OPENAI_API_KEY environment variable is not set")
+
+if not PINECONE_API_KEY:
+    raise ValueError("PINECONE_API_KEY environment variable is not set")
 PINECONE_ENVIRONMENT = "us-east4-gcp" #Pinecone Environment (eg. "us-east1-gcp")
 
 #Set Variables

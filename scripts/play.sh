@@ -2,11 +2,11 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title gm
+# @raycast.title play
 # @raycast.mode compact
 
 # Optional parameters:
-# @raycast.icon ☀️
+# @raycast.icon 🪀
 
 # Documentation:
 # @raycast.author Aja Sibley
