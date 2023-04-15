@@ -1,10 +1,16 @@
-FROM python:3.11-slim
+# Use the nixos/nix:latest image
+FROM nixos/nix:latest
 
-ENV PIP_NO_CACHE_DIR=true
-WORKDIR /tmp
-COPY requirements.txt /tmp/requirements.txt
+# Set a working directory inside the container
+WORKDIR /plurigrid
 RUN pip install -r requirements.txt
 
-WORKDIR /app
-COPY . /app
-ENTRYPOINT ["./babyagi.py"]
+# Copy the entrypoint.sh script and make it executable
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Copy the contents of the current repository into the /plurigrid directory of the container
+COPY . /plurigrid
+
+ENTRYPOINT ["/entrypoint.sh"]
+>>>>>>> main
