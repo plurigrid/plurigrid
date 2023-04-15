@@ -1,6 +1,6 @@
 # Getting started
-
-## Running with 'just'
+`just play`
+## More on open gameplay
 
 1. If it's the first time running after pulling changes, run "just install" to install all dependencies.
 2. Set the OPENAI_API_KEY environment variable in your shell.
