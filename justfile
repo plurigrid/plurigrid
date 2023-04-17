@@ -10,10 +10,10 @@ ontology knowledge-base mode="repl":
     python3 -m plurigrid.agent --agent ontology --mode "{{mode}}" --path "{{knowledge-base}}"
 
 docker:
-    docker run -it --platform=linux/amd64 -v "$(pwd)":/plurigrid nixos/nix bash
+    docker run -it --platform=linux/amd64 -v "$(pwd)":/plurigrid nixos/nix bash -c "cd /plurigrid;nix-shell"
 
 run:
-	nix-channel --update
+	#nix-channel --update
 	nix-shell --run "poetry update"
 
 shell: run
