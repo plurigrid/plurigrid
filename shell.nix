@@ -3,9 +3,9 @@
 pkgs.mkShell {
   buildInputs = with pkgs; [
     just
-    python3
     poetry
     tree
+    python3
     sl
     jq
     stdenv.cc.cc.lib

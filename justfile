@@ -1,5 +1,6 @@
 default_mode := "gradio"
-play mode=default_mode:
+
+play mode=default_mode: shell
     poetry run python3 -m plurigrid.agent --agent play_coplay --mode "{{mode}}"
 
 summon prompt mode=default_mode:
@@ -8,11 +9,12 @@ summon prompt mode=default_mode:
 ontology knowledge-base mode="repl":
     python3 -m plurigrid.agent --agent ontology --mode "{{mode}}" --path "{{knowledge-base}}"
 
-install:
-    nix-shell --run "poetry install"
+docker:
+    docker run -it --platform=linux/amd64 -v "$(pwd)":/plurigrid nixos/nix bash -c "cd /plurigrid;nix-shell"
 
-update:
-    nix-shell --run "poetry update"
+run:
+	#nix-channel --update
+	nix-shell --run "poetry update"
 
-shell:
-    nix-shell --run "poetry shell"
+shell: run
+	nix-shell --run "poetry shell"
