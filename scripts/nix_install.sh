@@ -21,9 +21,3 @@ if ! command -v nix --help >/dev/null 2>&1; then
 else
   echo "Nix package manager is already installed."
 fi
-
-echo "Starting poetry shell..."
-poetry install
-
-echo "Starting nix-shell..."
-nix-shell
