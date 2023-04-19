@@ -18,3 +18,12 @@ run:
 
 shell: run
 	nix-shell --run "poetry shell"
+
+install_nix:
+    bash "$(pwd)/scripts/install_nix.sh"
+
+install_docker:
+    bash "$(pwd)/scripts/install_docker.sh"
+
+mac_play:
+    bash "$(pwd)/scripts/start_plurigrid.sh"

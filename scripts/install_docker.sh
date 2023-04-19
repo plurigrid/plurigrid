@@ -64,6 +64,7 @@ jq '
   | .diskQcowCompactAfter = 0
   | .diskQcowKeepErased = 0
   | .useVirtualizationFrameworkRosetta = true
+  | .useContainerdSnapshotter = true
   ' "$DOCKER_SETTINGS_FILE" > "$DOCKER_SETTINGS_FILE.tmp" && mv "$DOCKER_SETTINGS_FILE.tmp" "$DOCKER_SETTINGS_FILE"
 
 echo "Successfully updated the Docker settings. Restarting Docker for the changes to take effect."

@@ -1,7 +1,11 @@
 #!/bin/bash
 
-OPENAI_API_KEY=
-PINECONE_API_KEY=
+# Prompt the user to enter API keys
+echo "Please enter your OpenAI API key:"
+read OPENAI_API_KEY
+
+echo "Please enter your Pinecone API key:"
+read PINECONE_API_KEY
 
 docker run -it --platform=linux/amd64 -v "$(pwd)":/plurigrid nixos/nix bash -c "
   cd /plurigrid && \
