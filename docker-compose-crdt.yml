@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  alice:
+    build: .
+    ports:
+     - "8000:8000"
+    environment:
+     - DEVICE_NAME=alice
+  bob:
+    build: .
+    ports:
+     - "8001:8000"
+    environment:
+     - DEVICE_NAME=bob

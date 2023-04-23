@@ -13,6 +13,12 @@ RUN nix-shell --run " \
     poetry install --no-dev --no-interaction --no-ansi \
     "
 
+# Install y-py within the Nix shell environment
+RUN nix-shell --run " \
+    echo 'Some time might vary depending on your internet) && \
+    poetry add y-py \
+    "
+
 # Copy the entrypoint.sh script and make it executable
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
