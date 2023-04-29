@@ -4548,3 +4548,15 @@ To properly research and develop strategies to identify and analyze the potentia
 107: Develop strategies to improve the scalability and sustainability of renewable energy sources for Kardashev Type II and beyond electricity grids.
 
 *****TASK RESULT*****
+
+*****TASK LIST*****
+
+132: Setup Jupyter Notebooks for live CRDT colaberation.
+133: Write documentation on the prcoess and add it to onboarding.
+134: Push old to do list to this log.md.
+
+*****NEXT TASK*****
+
+132: Setup Jupyter Notebooks for live CRDT colaberation.
+
+*****TASK RESULT*****
