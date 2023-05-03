@@ -5,7 +5,7 @@
 1. If it's the first time running after pulling changes, run "just install" to install all dependencies.
 2. Set the OPENAI_API_KEY environment variable in your shell.
 3. Run `just shell` to run the nix and poetry shells.
-4. For the play-coplay agent, run `just play {gradio, repl, zulip}`. Default mode if you don't provide one will create a link to a gradio UI. (for zulip see extra configuration below.) Note: If you are running on a Mac using Apple Silicon run `just play_mac` this will run a play-coplay loop in you shell. If just play_mac fails you may need to run `docker system prune -a` to free up disk space in your Docker environment by removing all the unused containers, images, volumes, and networks
+4. For the play-coplay agent, run `just play {gradio, repl, zulip}`. Default mode if you don't provide one will create a link to a gradio UI. (for zulip see extra configuration below.) Note: If you are running on a Mac using Apple Silicon run `just mac_play` this will run a play-coplay loop in you shell. If just mac_play fails you may need to run `docker system prune -a` to free up disk space in your Docker environment by removing all the unused containers, images, volumes, and networks
 5. To summon a twin with a prompt, run `just summon <prompt-file-path> {gradio, repl, zulip}`.
 6. To start an ontology agent, run `just ontology <path-to-knowledge-base> {gradio, repl, zulip}`. This will allow you to ask questions over the knowledge base you provide. Protip: make sure the knowledge base does not have nested directories. scripts/copy_files_flat.sh can help with this.
 
