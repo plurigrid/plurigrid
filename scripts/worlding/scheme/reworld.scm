@@ -1,5 +1,5 @@
 #! /usr/local/bin/scsh -e main -s
-!#
+!#j
 
 (define home (getenv "HOME"))
 
